@@ -807,7 +807,7 @@ FP_Jarkom_Kelompok_XXX_YYY_ZZZ/
 
 Jika ada pertanyaan atau butuh bantuan, silakan hubungi:
 
-**Email**: [email@example.com]  
+**Email**: [5027241024@student.its.ac.id]  
 **GitHub**: [@username](https://github.com/pocongcyber77)
 
 ---
