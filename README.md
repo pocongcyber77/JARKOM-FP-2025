@@ -121,49 +121,15 @@ Yayasan ARA merupakan organisasi yang membawahi berbagai unit kerja pendidikan d
 
 ### 🗺️ Diagram Topologi
 
-```
-                    ┌─────────────────────────────────┐
-                    │      INTERNET (8.8.8.8)         │
-                    └──────────────┬──────────────────┘
-                                   │
-                          ┌────────▼────────┐
-                          │  Router Utama   │
-                          │   (NAT/PAT)    │
-                          └────────┬────────┘
-                                   │
-                    ┌──────────────┴──────────────┐
-                    │                             │
-         ┌──────────▼──────────┐    ┌────────────▼──────────┐
-         │   Gedung Utama      │    │   Gedung ARA Tech     │
-         │   Yayasan ARA       │    │   (5 Lantai)          │
-         │                     │    │                       │
-         │  ┌────────────────┐ │    │  ┌─────────────────┐ │
-         │  │ Router Utama   │ │    │  │ Router Lantai 1 │ │
-         │  │ Gedung Utama   │ │    │  │ Router Lantai 2 │ │
-         │  └────────────────┘ │    │  │ Router Lantai 3 │ │
-         │                     │    │  │ Router Lantai 4 │ │
-         │  Unit 1: 95 host    │    │  │ Router Lantai 5 │ │
-         │  Unit 2: 220 host   │    │  └─────────────────┘ │
-         │  Unit 3: 45 host    │    │                       │
-         │  Unit 4: 18 host    │    │  Lantai 1: 79 host   │
-         │  Unit 5: 6 host     │    │  Lantai 2: 85 host   │
-         │  Unit 6: 380 host   │    │  Lantai 3: 73 host   │
-         └─────────────────────┘    │  Lantai 4: 86 host   │
-                                    │  Lantai 5: 37 host   │
-                                    └──────────────────────┘
-                                             │
-                                    ┌────────▼────────┐
-                                    │  Router Cabang  │
-                                    │  (GRE Tunnel)   │
-                                    └────────┬────────┘
-                                             │
-                                    ┌────────▼────────┐
-                                    │  Kantor Cabang  │
-                                    │  40 host        │
-                                    └─────────────────┘
-```
+<div align="center">
 
-> **Catatan**: Diagram topologi lengkap dapat dilihat di file `topology.png`
+![Topologi Jaringan](Assets/Topology.jpg)
+
+*Diagram Topologi Lengkap Jaringan Yayasan ARA*
+
+</div>
+
+> **Catatan**: Diagram topologi lengkap dapat dilihat di file [`Assets/Topology.jpg`](Assets/Topology.jpg)
 
 ---
 
@@ -186,16 +152,28 @@ Yayasan ARA merupakan organisasi yang membawahi berbagai unit kerja pendidikan d
 
 #### Tabel Subnetting VLSM Gedung Utama
 
-| Unit | Network ID | Subnet Mask | Prefix | Broadcast Address | Range IP | Jumlah Host | Cadangan |
-|------|------------|-------------|--------|-------------------|----------|-------------|----------|
-| Unit Layanan Operasional | 10.0.0.0 | 255.255.254.0 | /23 | 10.0.1.255 | 10.0.0.1 - 10.0.1.254 | 380 | 20% |
-| Unit Kurikulum & Penjaminan Mutu | 10.0.2.0 | 255.255.255.0 | /24 | 10.0.2.255 | 10.0.2.1 - 10.0.2.254 | 220 | 20% |
-| Unit SDM Pendidikan | 10.0.3.0 | 255.255.255.128 | /25 | 10.0.3.127 | 10.0.3.1 - 10.0.3.126 | 95 | 20% |
-| Unit Sarana Prasarana | 10.0.3.128 | 255.255.255.192 | /26 | 10.0.3.191 | 10.0.3.129 - 10.0.3.190 | 45 | 20% |
-| Unit Pembinaan & Pengawasan Sekolah | 10.0.3.192 | 255.255.255.224 | /27 | 10.0.3.223 | 10.0.3.193 - 10.0.3.222 | 18 | 20% |
-| Unit IT Pendidikan | 10.0.3.224 | 255.255.255.248 | /29 | 10.0.3.231 | 10.0.3.225 - 10.0.3.230 | 6 | 20% |
+<div align="center">
 
-> **Detail perhitungan lengkap tersedia di file Excel**: `subnetting-gedung-utama.xlsx`
+![VLSM Subnetting](Assets/VLSM.jpg)
+
+*Visualisasi Subnetting VLSM Gedung Utama*
+
+</div>
+
+| Unit | Network ID | Subnet Mask | Prefix | Broadcast Address | Range IP | Host | Host + 20% |
+|------|------------|-------------|--------|-------------------|----------|------|------------|
+| Unit IT Pendidikan | 10.0.0.0 | 255.255.255.240 | /28 | 10.0.0.15 | 10.0.0.1 – 10.0.0.14 | 6 | 7 |
+| Unit Pembinaan & Pengawasan Sekolah | 10.0.0.32 | 255.255.255.224 | /27 | 10.0.0.63 | 10.0.0.33 – 10.0.0.62 | 18 | 22 |
+| Unit Sarana Prasarana | 10.0.0.64 | 255.255.255.192 | /26 | 10.0.0.127 | 10.0.0.65 – 10.0.0.126 | 45 | 54 |
+| Unit SDM Pendidikan | 10.0.0.128 | 255.255.255.128 | /25 | 10.0.0.255 | 10.0.0.129 – 10.0.0.254 | 95 | 114 |
+| Unit Kurikulum & Penjaminan Mutu | 10.0.2.0 | 255.255.254.0 | /23 | 10.0.3.255 | 10.0.2.1 – 10.0.3.254 | 220 | 264 |
+| Unit Layanan Operasional Yayasan | 10.0.4.0 | 255.255.254.0 | /23 | 10.0.5.255 | 10.0.4.1 – 10.0.5.254 | 380 | 456 |
+| **Router Link** | **10.0.6.0** | **255.255.255.252** | **/30** | **10.0.6.3** | **10.0.6.1 - 10.0.6.2** | **2** | **2** |
+| **TOTAL** | - | - | **/22** | - | - | **764** | **917** |
+
+> **📊 Detail perhitungan lengkap tersedia di file CSV**: [`Sheet/Pembagian IP - VLSM.csv`](Sheet/Pembagian%20IP%20-%20VLSM.csv)
+
+**📝 Catatan**: File CSV ini berisi perhitungan lengkap subnetting VLSM untuk semua unit di Gedung Utama, termasuk perhitungan cadangan 20% dan alokasi IP yang efisien.
 
 ---
 
@@ -226,46 +204,130 @@ Yayasan ARA merupakan organisasi yang membawahi berbagai unit kerja pendidikan d
 
 #### Tabel Subnetting CIDR Per Departemen
 
-| Departemen | Lantai | Network ID | Subnet Mask | Prefix | Broadcast Address | Range IP | Jumlah Host | Cadangan |
-|------------|--------|------------|-------------|--------|-------------------|----------|-------------|----------|
-| Ruang Server & Data Center | 1 | 172.16.0.0 | 255.255.255.240 | /28 | 172.16.0.15 | 172.16.0.1 - 172.16.0.14 | 12 | 20% |
-| Departemen IT Support | 1 | 172.16.0.16 | 255.255.255.192 | /26 | 172.16.0.63 | 172.16.0.17 - 172.16.0.62 | 45 | 20% |
-| Departemen Cybersecurity | 1 | 172.16.0.64 | 255.255.255.224 | /27 | 172.16.0.95 | 172.16.0.65 - 172.16.0.94 | 22 | 20% |
-| Departemen Marketing | 2 | 172.16.0.96 | 255.255.255.192 | /26 | 172.16.0.159 | 172.16.0.97 - 172.16.0.158 | 35 | 20% |
-| Departemen Sales | 2 | 172.16.0.160 | 255.255.255.224 | /27 | 172.16.0.191 | 172.16.0.161 - 172.16.0.190 | 25 | 20% |
-| Departemen Human Resources | 2 | 172.16.0.192 | 255.255.255.224 | /27 | 172.16.0.223 | 172.16.0.193 - 172.16.0.222 | 25 | 20% |
-| Departemen R&D | 3 | 172.16.0.224 | 255.255.255.192 | /26 | 172.16.0.255 | 172.16.0.225 - 172.16.0.254 | 55 | 20% |
-| Departemen People Development | 3 | 172.16.1.0 | 255.255.255.224 | /27 | 172.16.1.31 | 172.16.1.1 - 172.16.1.30 | 18 | 20% |
-| Departemen Keuangan | 4 | 172.16.1.32 | 255.255.255.192 | /26 | 172.16.1.63 | 172.16.1.33 - 172.16.1.62 | 28 | 20% |
-| Departemen Legal | 4 | 172.16.1.64 | 255.255.255.224 | /27 | 172.16.1.95 | 172.16.1.65 - 172.16.1.94 | 18 | 20% |
-| Departemen Customer Service | 4 | 172.16.1.96 | 255.255.255.192 | /26 | 172.16.1.159 | 172.16.1.97 - 172.16.1.158 | 40 | 20% |
-| Executive Office | 5 | 172.16.1.160 | 255.255.255.240 | /28 | 172.16.1.175 | 172.16.1.161 - 172.16.1.174 | 12 | 20% |
-| Guest Lounge | 5 | 172.16.1.176 | 255.255.255.240 | /28 | 172.16.1.191 | 172.16.1.177 - 172.16.1.190 | 10 | 20% |
-| Auditorium | 5 | 172.16.1.192 | 255.255.255.224 | /27 | 172.16.1.223 | 172.16.1.193 - 172.16.1.222 | 15 | 20% |
+<div align="center">
+
+![CIDR Subnetting](Assets/CIDR.jpg)
+
+*Visualisasi Subnetting CIDR Gedung ARA Tech*
+
+</div>
+
+| Subnet | Departemen | Network ID | Subnet Mask | Prefix | Broadcast Address | Range IP | Host | Host + 20% |
+|--------|------------|------------|-------------|--------|-------------------|----------|------|------------|
+| A7 | Departemen IT Support | 10.0.6.0 | 255.255.255.192 | /26 | 10.0.6.63 | 10.0.6.1 – 10.0.6.62 | 45 | 54 |
+| A8 | Ruang Server & Data Center (Server) | 10.0.6.64 | 255.255.255.240 | /28 | 10.0.6.79 | 10.0.6.65 – 10.0.6.78 | 12 | 14 |
+| A9 | Departemen Cybersecurity | 10.0.6.128 | 255.255.255.224 | /27 | 10.0.6.159 | 10.0.6.129 – 10.0.6.158 | 22 | 26 |
+| A10 | Departemen Marketing | 10.0.8.0 | 255.255.255.192 | /26 | 10.0.8.63 | 10.0.8.1 – 10.0.8.62 | 35 | 42 |
+| A11 | Departemen Sales | 10.0.8.64 | 255.255.255.224 | /27 | 10.0.8.95 | 10.0.8.65 – 10.0.8.94 | 25 | 30 |
+| A12 | Departemen Human Resources | 10.0.8.128 | 255.255.255.224 | /27 | 10.0.8.159 | 10.0.8.129 – 10.0.8.158 | 25 | 30 |
+| A13 | Departemen R&D | 10.0.14.0 | 255.255.255.128 | /25 | 10.0.14.127 | 10.0.14.1 – 10.0.14.126 | 55 | 66 |
+| A14 | Departemen People Development | 10.0.14.128 | 255.255.255.224 | /27 | 10.0.14.159 | 10.0.14.129 – 10.0.14.158 | 18 | 22 |
+| A15 | Departemen Keuangan | 10.0.22.0 | 255.255.255.192 | /26 | 10.0.22.63 | 10.0.22.1 – 10.0.22.62 | 28 | 34 |
+| A16 | Departemen Legal | 10.0.22.64 | 255.255.255.224 | /27 | 10.0.22.95 | 10.0.22.65 – 10.0.22.94 | 18 | 22 |
+| A17 | Departemen Customer Service | 10.0.22.128 | 255.255.255.192 | /26 | 10.0.22.191 | 10.0.22.129 – 10.0.22.190 | 40 | 48 |
+| A18 | Executive Office | 10.0.23.0 | 255.255.255.240 | /28 | 10.0.23.15 | 10.0.23.1 – 10.0.23.14 | 12 | 14 |
+| A19 | Guest Lounge | 10.0.23.16 | 255.255.255.240 | /28 | 10.0.23.31 | 10.0.23.17 – 10.0.23.30 | 10 | 12 |
+| A20 | Auditorium | 10.0.23.32 | 255.255.255.224 | /27 | 10.0.23.63 | 10.0.23.33 – 10.0.23.62 | 15 | 18 |
+| A21 | Regional Office | 10.0.2.128 | 255.255.255.192 | /26 | 10.0.2.191 | 10.0.2.129 – 10.0.2.190 | 40 | 48 |
 
 #### 2.2. Supernetting (Route Aggregation)
 
-Untuk menyederhanakan routing, beberapa subnet digabungkan menggunakan teknik CIDR (Supernetting):
+Untuk menyederhanakan routing, beberapa subnet digabungkan menggunakan teknik CIDR (Supernetting). Proses penggabungan dilakukan secara bertahap:
 
-| CIDR Block | Prefix Baru | Range IP | Subnet yang Digabungkan | Alasan Penggabungan |
-|------------|-------------|----------|-------------------------|---------------------|
-| 172.16.0.0/25 | /25 | 172.16.0.0 - 172.16.0.127 | Ruang Server & Data Center (/28), IT Support (/26), Cybersecurity (/27) | Semua departemen di Lantai 1, menghemat routing table |
-| 172.16.0.128/25 | /25 | 172.16.0.128 - 172.16.0.255 | Marketing (/26), Sales (/27), HR (/27) | Semua departemen di Lantai 2, routing lebih efisien |
-| 172.16.1.0/25 | /25 | 172.16.1.0 - 172.16.1.127 | R&D (/26), People Development (/27) | Semua departemen di Lantai 3, mengurangi jumlah route |
-| 172.16.1.128/25 | /25 | 172.16.1.128 - 172.16.1.255 | Keuangan (/26), Legal (/27), Customer Service (/26) | Semua departemen di Lantai 4, optimasi routing table |
-| 172.16.2.0/26 | /26 | 172.16.2.0 - 172.16.2.63 | Executive Office (/28), Guest Lounge (/28), Auditorium (/27) | Semua departemen di Lantai 5, supernetting untuk efisiensi |
+**Tahap I - Penggabungan Level 1:**
 
-> **Detail perhitungan lengkap tersedia di file Excel**: `subnetting-ara-tech.xlsx`
+| Subnet | Gabungan dari | Netmask Akhir |
+|--------|---------------|---------------|
+| X1 | A7 (/26) + A8 (/28) | /25 |
+| X2 | A10 (/26) + A11 (/27) | /25 |
+| X3 | A13 (/25) + A14 (/27) | /24 |
+| X4 | A15 (/26) + A16 (/27) | /25 |
+| X5 | A18 (/28) + A19 (/28) | /27 |
+
+**Tahap II - Penggabungan Level 2:**
+
+| Subnet | Gabungan dari | Netmask Akhir |
+|--------|---------------|---------------|
+| Y1 | X1 (/25) + A9 (/27) | /24 |
+| Y2 | X2 (/25) + A12 (/27) | /24 |
+| Y3 | X4 (/25) + A17 (/26) | /24 |
+| Y4 | X5 (/27) + A20 (/27) | /26 |
+
+**Tahap III - Penggabungan Level 3:**
+
+| Subnet | Gabungan dari | Netmask Akhir |
+|--------|---------------|---------------|
+| W1 | Y1 (/24) + R4-R5 (/30) | /23 |
+| W2 | Y4 (/26) + R7-R8 (/30) | /25 |
+
+**Tahap IV - Penggabungan Level 4:**
+
+| Subnet | Gabungan dari | Netmask Akhir |
+|--------|---------------|---------------|
+| Q1 | W1 (/23) + Y2 (/24) | /22 |
+| Q2 | W2 (/25) + Y3 (/24) | /23 |
+
+**Tahap V - Penggabungan Level 5:**
+
+| Subnet | Gabungan dari | Netmask Akhir |
+|--------|---------------|---------------|
+| T1 | Q1 (/22) + R5-R6 (/30) | /21 |
+| T2 | Q2 (/23) + R6-R7 (/30) | /22 |
+
+**Tahap VI - Penggabungan Level 6:**
+
+| Subnet | Gabungan dari | Netmask Akhir |
+|--------|---------------|---------------|
+| H1 | T1 (/21) + X3 (/24) | /20 |
+
+**Tahap VII - Penggabungan Level 7:**
+
+| Subnet | Gabungan dari | Netmask Akhir |
+|--------|---------------|---------------|
+| P1 | H1 (/20) + T2 (/22) | /19 |
+
+**Tahap VIII - Penggabungan Final:**
+
+| Subnet | Gabungan dari | Netmask Akhir |
+|--------|---------------|---------------|
+| K1 | P1 (/19) + R6-R2 (/30) | /18 |
+
+> **📊 Detail perhitungan lengkap tersedia di file CSV**: 
+> - [`Sheet/Penggabungan - CIDR.csv`](Sheet/Penggabungan%20-%20CIDR.csv) - Tabel proses supernetting bertahap
+> - [`Sheet/Pembagian IP - CIDR.csv`](Sheet/Pembagian%20IP%20-%20CIDR.csv) - Tabel subnetting CIDR per departemen
+
+**📝 Catatan**: File CSV ini berisi perhitungan lengkap subnetting CIDR untuk semua departemen di Gedung ARA Tech, termasuk proses supernetting (route aggregation) yang dilakukan secara bertahap untuk mengoptimalkan routing table.
 
 ---
 
 ### 3. Subnetting Kantor Cabang
 
-**Alokasi IP**: `192.168.1.0/24`
+**Alokasi IP**: `10.0.2.128/26`
 
-| Lokasi | Network ID | Subnet Mask | Prefix | Broadcast Address | Range IP | Jumlah Host | Cadangan |
-|--------|------------|-------------|--------|-------------------|----------|-------------|----------|
-| Regional Office | 192.168.1.0 | 255.255.255.192 | /26 | 192.168.1.63 | 192.168.1.1 - 192.168.1.62 | 40 | 20% |
+| Lokasi | Network ID | Subnet Mask | Prefix | Broadcast Address | Range IP | Host | Host + 20% |
+|--------|------------|-------------|--------|-------------------|----------|------|------------|
+| Regional Office | 10.0.2.128 | 255.255.255.192 | /26 | 10.0.2.191 | 10.0.2.129 – 10.0.2.190 | 40 | 48 |
+
+### 4. Tabel Routing (Link antar Router)
+
+| Link Router | Network ID | Subnet Mask | Prefix | Broadcast Address | Range IP |
+|-------------|------------|-------------|--------|-------------------|----------|
+| R1 - R2 | 10.0.0.0 | 255.255.255.252 | /30 | 10.0.0.3 | 10.0.0.1 - 10.0.0.2 |
+| R2 - R3 | 10.0.0.4 | 255.255.255.252 | /30 | 10.0.0.7 | 10.0.0.5 - 10.0.0.6 |
+| R2 - R6 | 10.0.0.8 | 255.255.255.252 | /30 | 10.0.0.11 | 10.0.0.9 - 10.0.0.10 |
+| R4 - R5 | 10.0.0.12 | 255.255.255.252 | /30 | 10.0.0.15 | 10.0.0.13 - 10.0.0.14 |
+| R5 - R6 | 10.0.0.16 | 255.255.255.252 | /30 | 10.0.0.19 | 10.0.0.17 - 10.0.0.18 |
+| R6 - R7 | 10.0.0.20 | 255.255.255.252 | /30 | 10.0.0.23 | 10.0.0.21 - 10.0.0.22 |
+| R7 - R8 | 10.0.0.24 | 255.255.255.252 | /30 | 10.0.0.27 | 10.0.0.25 - 10.0.0.26 |
+| R4 - R5 (Alternatif) | 10.0.7.0 | 255.255.255.252 | /30 | 10.0.7.3 | 10.0.7.1 – 10.0.7.2 |
+| R5 - R6 (Alternatif) | 10.0.10.0 | 255.255.255.252 | /30 | 10.0.10.3 | 10.0.10.1 – 10.0.10.2 |
+| R6 - R7 (Alternatif) | 10.0.24.0 | 255.255.255.252 | /30 | 10.0.24.3 | 10.0.24.1 – 10.0.24.2 |
+| R7 - R8 (Alternatif) | 10.0.23.64 | 255.255.255.252 | /30 | 10.0.23.67 | 10.0.23.65 – 10.0.23.66 |
+| R2 - R6 (Alternatif) | 10.0.38.0 | 255.255.255.252 | /30 | 10.0.38.3 | 10.0.38.1 – 10.0.38.2 |
+
+> **📊 Detail lengkap tersedia di file CSV**: [`Sheet/Rute.csv`](Sheet/Rute.csv)
+
+**📝 Catatan**: File CSV ini berisi informasi lengkap tentang semua subnet yang digunakan, termasuk subnet untuk departemen, link antar router, dan total kebutuhan host dengan cadangan 20%.
 
 ---
 
@@ -273,100 +335,137 @@ Untuk menyederhanakan routing, beberapa subnet digabungkan menggunakan teknik CI
 
 ### 1. Konfigurasi IP Addressing
 
-#### 1.1. Gedung Utama
+#### 1.1. Router R1 (Gedung Utama)
+
+Konfigurasi IP untuk Router R1 yang menghubungkan semua unit di Gedung Utama:
 
 ```cisco
-! Router Utama Gedung Utama
-interface GigabitEthernet0/0
- ip address 10.0.0.1 255.255.254.0  ! Unit Layanan Operasional
-!
-interface GigabitEthernet0/1
- ip address 10.0.2.1 255.255.255.0   ! Unit Kurikulum & Penjaminan Mutu
-!
-interface GigabitEthernet0/2
- ip address 10.0.3.1 255.255.255.128 ! Unit SDM Pendidikan
-!
-interface GigabitEthernet0/3
- ip address 10.0.3.129 255.255.255.192 ! Unit Sarana Prasarana
-!
-interface Serial0/0/0
- ip address 10.100.0.1 255.255.255.252 ! Link ke Router Utama (Internet)
-!
-interface Serial0/0/1
- ip address 10.200.0.1 255.255.255.252 ! Link ke Gedung ARA Tech (OSPF/EIGRP)
+enable
+conf t
+
+interface FastEthernet0/0
+ip address 10.0.6.1 255.255.255.252
+
+interface FastEthernet1/0 
+ip address 10.0.0.129 255.255.255.128  ! Unit SDM Pendidikan
+
+interface FastEthernet6/0 
+ip address 10.0.2.1 255.255.254.0      ! Unit Kurikulum & Penjaminan Mutu
+
+interface FastEthernet7/0 
+ip address 10.0.0.65 255.255.255.192   ! Unit Sarana Prasarana
+
+interface FastEthernet8/0 
+ip address 10.0.0.33 255.255.255.224   ! Unit Pembinaan & Pengawasan Sekolah
+
+interface FastEthernet9/0
+ip address 10.0.0.1 255.255.255.240    ! Unit IT Pendidikan
+
+interface FastEthernet4/0 
+ip address 10.0.4.1 255.255.254.0       ! Unit Layanan Operasional
+
+no shutdown
+exit
 ```
 
-#### 1.2. Gedung ARA Tech
+> **Konfigurasi lengkap**: [`Routing/R1.cfg`](Routing/R1.cfg)
 
-```cisco
-! Router Lantai 1
-interface GigabitEthernet0/0
- ip address 172.16.0.1 255.255.255.240 ! Ruang Server & Data Center
-!
-interface GigabitEthernet0/1
- ip address 172.16.0.17 255.255.255.192 ! IT Support
-!
-interface GigabitEthernet0/2
- ip address 172.16.0.65 255.255.255.224 ! Cybersecurity
-!
-interface Serial0/0/0
- ip address 10.200.0.2 255.255.255.252 ! Link ke Gedung Utama
-!
-interface Serial0/0/1
- ip address 10.201.0.1 255.255.255.252 ! Link ke Router Lantai 2 (Static)
-```
+#### 1.2. Router R2 - R8 (Gedung ARA Tech & Kantor Cabang)
 
-> **Catatan**: Konfigurasi lengkap untuk semua router tersedia di file Packet Tracer
+Konfigurasi untuk router-router di Gedung ARA Tech dan Kantor Cabang:
+
+- **R2**: Router penghubung Gedung ARA Tech ke Kantor Utama
+- **R3**: Router Lantai 1 ARA Tech
+- **R4**: Router Lantai 2 ARA Tech  
+- **R5**: Router Lantai 3 ARA Tech
+- **R6**: Router penghubung utama ARA Tech
+- **R7**: Router Lantai 4 ARA Tech
+- **R8**: Router Lantai 5 ARA Tech & Kantor Cabang
+
+> **📁 Konfigurasi lengkap semua router tersedia di folder**: [`Routing/`](Routing/)
+> 
+> | File | Router | Fungsi |
+> |------|--------|--------|
+> | [`R1.cfg`](Routing/R1.cfg) | R1 | Router Gedung Utama - menghubungkan semua unit |
+> | [`R2.cfg`](Routing/R2.cfg) | R2 | Router ARA Tech ke Kantor Utama |
+> | [`R3.cfg`](Routing/R3.cfg) | R3 | Router Lantai 1 ARA Tech |
+> | [`R4.cfg`](Routing/R4.cfg) | R4 | Router Lantai 2 ARA Tech |
+> | [`R5.cfg`](Routing/R5.cfg) | R5 | Router Lantai 3 ARA Tech |
+> | [`R6.cfg`](Routing/R6.cfg) | R6 | Router ARA Tech ke Branch |
+> | [`R7.cfg`](Routing/R7.cfg) | R7 | Router Lantai 4 ARA Tech |
+> | [`R8.cfg`](Routing/R8.cfg) | R8 | Router Lantai 5 & Branch |
+
+**📝 Catatan**: Semua file konfigurasi router menggunakan format Cisco IOS dan dapat langsung di-copy ke Cisco Packet Tracer atau router fisik.
 
 ---
 
 ### 2. Konfigurasi DHCP
 
-#### 2.1. DHCP Server di Gedung Utama
+#### 2.1. DHCP Server di Router R1 (Gedung Utama)
+
+Konfigurasi DHCP untuk semua unit di Gedung Utama:
 
 ```cisco
-! Router Utama Gedung Utama - DHCP Configuration
-ip dhcp pool UNIT_LAYANAN_OPERASIONAL
- network 10.0.0.0 255.255.254.0
- default-router 10.0.0.1
- dns-server 8.8.8.8 8.8.4.4
-!
-ip dhcp pool UNIT_KURIKULUM
- network 10.0.2.0 255.255.255.0
+! Excluded Addresses (Gateway & Reserved IPs)
+ip dhcp excluded-address 10.0.0.129
+ip dhcp excluded-address 10.0.2.1
+ip dhcp excluded-address 10.0.0.65
+ip dhcp excluded-address 10.0.0.33
+ip dhcp excluded-address 10.0.0.1
+ip dhcp excluded-address 10.0.4.1
+
+! DHCP Pool untuk Unit SDM Pendidikan
+ip dhcp pool LAN_FA0
+ network 10.0.0.128 255.255.255.128
+ default-router 10.0.0.129
+ dns-server 8.8.8.8
+ exit
+
+! DHCP Pool untuk Unit Kurikulum & Penjaminan Mutu
+ip dhcp pool LAN_FA6
+ network 10.0.2.0 255.255.254.0
  default-router 10.0.2.1
- dns-server 8.8.8.8 8.8.4.4
-!
-ip dhcp pool UNIT_SDM
- network 10.0.3.0 255.255.255.128
- default-router 10.0.3.1
- dns-server 8.8.8.8 8.8.4.4
-!
-ip dhcp excluded-address 10.0.0.1 10.0.0.10
-ip dhcp excluded-address 10.0.2.1 10.0.2.10
-ip dhcp excluded-address 10.0.3.1 10.0.3.10
+ dns-server 8.8.8.8
+ exit
+
+! DHCP Pool untuk Unit Sarana Prasarana
+ip dhcp pool LAN_FA7
+ network 10.0.0.64 255.255.255.192
+ default-router 10.0.0.65
+ dns-server 8.8.8.8
+ exit
+
+! DHCP Pool untuk Unit Pembinaan & Pengawasan Sekolah
+ip dhcp pool LAN_FA8
+ network 10.0.0.32 255.255.255.224
+ default-router 10.0.0.33
+ dns-server 8.8.8.8
+ exit
+
+! DHCP Pool untuk Unit IT Pendidikan
+ip dhcp pool LAN_FA9
+ network 10.0.0.0 255.255.255.240
+ default-router 10.0.0.1
+ dns-server 8.8.8.8
+ exit
+
+! DHCP Pool untuk Unit Layanan Operasional
+ip dhcp pool LAN_FA4
+ network 10.0.4.0 255.255.254.0
+ default-router 10.0.4.1
+ dns-server 8.8.8.8
+ exit
 ```
 
-#### 2.2. DHCP Server di Gedung ARA Tech
+> **Konfigurasi lengkap**: [`Routing/R1.cfg`](Routing/R1.cfg)
 
-```cisco
-! Router Lantai 1 - DHCP Configuration
-ip dhcp pool LANTAI1_SERVER
- network 172.16.0.0 255.255.255.240
- default-router 172.16.0.1
- dns-server 8.8.8.8 8.8.4.4
-!
-ip dhcp pool LANTAI1_IT_SUPPORT
- network 172.16.0.16 255.255.255.192
- default-router 172.16.0.17
- dns-server 8.8.8.8 8.8.4.4
-!
-ip dhcp pool LANTAI1_CYBERSECURITY
- network 172.16.0.64 255.255.255.224
- default-router 172.16.0.65
- dns-server 8.8.8.8 8.8.4.4
-```
+#### 2.2. DHCP Server di Router ARA Tech
 
-> **Catatan**: Konfigurasi DHCP lengkap untuk semua departemen tersedia di dokumentasi
+Konfigurasi DHCP untuk semua departemen di Gedung ARA Tech dilakukan pada router-router di masing-masing lantai. Setiap router mengkonfigurasi DHCP pool untuk departemen yang terhubung.
+
+> **📁 Catatan**: Konfigurasi DHCP lengkap untuk semua departemen tersedia di file konfigurasi router di folder [`Routing/`](Routing/)
+
+**📝 Catatan**: Setiap router di Gedung ARA Tech mengkonfigurasi DHCP pool untuk departemen yang terhubung ke interface-nya. Konfigurasi DHCP mengikuti pola yang sama dengan Router R1, dengan network ID dan default-router yang disesuaikan dengan subnet masing-masing departemen.
 
 ---
 
@@ -611,25 +710,38 @@ traceroute [ip_destination_via_tunnel]
 FP_Jarkom_Kelompok_XXX_YYY_ZZZ/
 │
 ├── 📄 README.md                          # Dokumentasi utama (file ini)
-├── 📄 Dokumentasi_Konfigurasi.pdf        # Dokumentasi lengkap dengan screenshot
 │
-├── 📂 Packet_Tracer/
-│   └── 📄 Jarkom_FP_2025.pkt             # File Packet Tracer lengkap
+├── 📂 Assets/                            # Asset gambar dan diagram
+│   ├── 📄 Topology.jpg                   # Diagram topologi jaringan
+│   ├── 📄 VLSM.jpg                       # Visualisasi subnetting VLSM
+│   └── 📄 CIDR.jpg                       # Visualisasi subnetting CIDR
 │
-├── 📂 Diagram/
-│   └── 📄 topology.png                   # Diagram topologi jaringan
+├── 📂 Sheet/                             # File CSV untuk tabel subnetting
+│   ├── 📄 Pembagian IP - VLSM.csv        # Tabel subnetting VLSM Gedung Utama
+│   ├── 📄 Pembagian IP - CIDR.csv        # Tabel subnetting CIDR ARA Tech
+│   ├── 📄 Penggabungan - CIDR.csv        # Tabel supernetting CIDR
+│   └── 📄 Rute.csv                       # Tabel routing dan link router
 │
-├── 📂 Subnetting/
-│   ├── 📄 subnetting-gedung-utama.xlsx   # Tabel subnetting VLSM
-│   └── 📄 subnetting-ara-tech.xlsx       # Tabel subnetting CIDR
+├── 📂 Routing/                            # Konfigurasi router
+│   ├── 📄 R1.cfg                         # Router Gedung Utama
+│   ├── 📄 R2.cfg                         # Router ARA Tech ke Kantor Utama
+│   ├── 📄 R3.cfg                         # Router Lantai 1
+│   ├── 📄 R4.cfg                         # Router Lantai 2
+│   ├── 📄 R5.cfg                         # Router Lantai 3
+│   ├── 📄 R6.cfg                         # Router ARA Tech ke Branch
+│   ├── 📄 R7.cfg                         # Router Lantai 4
+│   └── 📄 R8.cfg                         # Router Lantai 5 & Branch
 │
-└── 📂 Screenshots/
-    ├── 📂 IP_Configuration/              # Screenshot konfigurasi IP
-    ├── 📂 DHCP/                          # Screenshot konfigurasi DHCP
-    ├── 📂 Routing/                       # Screenshot routing (Static & Dynamic)
-    ├── 📂 NAT/                           # Screenshot konfigurasi NAT
-    ├── 📂 GRE_Tunnel/                    # Screenshot konfigurasi GRE Tunnel
-    └── 📂 Verification/                  # Screenshot verifikasi (ping, traceroute)
+├── 📂 Project/                            # File project Packet Tracer
+│   └── 📄 Jarkom_FP_2025.pkt             # File Packet Tracer lengkap (jika ada)
+│
+└── 📂 Screenshots/                        # Screenshot verifikasi (opsional)
+    ├── 📂 IP_Configuration/               # Screenshot konfigurasi IP
+    ├── 📂 DHCP/                           # Screenshot konfigurasi DHCP
+    ├── 📂 Routing/                        # Screenshot routing (Static & Dynamic)
+    ├── 📂 NAT/                            # Screenshot konfigurasi NAT
+    ├── 📂 GRE_Tunnel/                     # Screenshot konfigurasi GRE Tunnel
+    └── 📂 Verification/                   # Screenshot verifikasi (ping, traceroute)
 ```
 
 ---
@@ -639,7 +751,6 @@ FP_Jarkom_Kelompok_XXX_YYY_ZZZ/
 ### ⚠️ Persyaratan Tugas
 
 - ✅ Menggunakan Cisco Packet Tracer untuk semua konfigurasi
-- ✅ Tidak terlalu bergantung pada GenAI / Subnet Calculator
 - ✅ Menggunakan alamat IP private (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16)
 - ✅ Cadangan subnet ~20% untuk skalabilitas
 - ✅ Semua subnet dapat saling berkomunikasi
@@ -661,9 +772,9 @@ FP_Jarkom_Kelompok_XXX_YYY_ZZZ/
 
 | Nama | NRP | Kontribusi |
 |------|-----|------------|
-| [Nama Anggota 1] | [NRP 1] | [Deskripsi kontribusi] |
-| [Nama Anggota 2] | [NRP 2] | [Deskripsi kontribusi] |
-| [Nama Anggota 3] | [NRP 3] | [Deskripsi kontribusi] |
+| Dina Rahmadani | 5027241065] | Topology, Config, Calculate, CIDR, VLSM |
+| [Nama Anggota 2] | 5027241024 | Testing, TroubleShoot, Reconfig, Documentation |
+
 
 ---
 
@@ -684,9 +795,9 @@ FP_Jarkom_Kelompok_XXX_YYY_ZZZ/
 |--------|------------|
 | **Mata Kuliah** | Komunikasi Data dan Jaringan Komputer |
 | **Semester** | Gasal 2025/2026 |
-| **Dosen** | [Nama Dosen] |
-| **Institusi** | [Nama Universitas] |
-| **Deadline** | Minggu, 14 Desember 2025, 23.59 |
+| **Dosen** | Hafara Firdausi, S.Kom., M.Kom. |
+| **Institusi** | Institut Teknologi Sepuluh Nopember |
+| **Deadline** | Minggu, 14 Desember 2025, 23.59 (kelewat)|
 
 ---
 
@@ -697,14 +808,14 @@ FP_Jarkom_Kelompok_XXX_YYY_ZZZ/
 Jika ada pertanyaan atau butuh bantuan, silakan hubungi:
 
 **Email**: [email@example.com]  
-**GitHub**: [@username](https://github.com/username)
+**GitHub**: [@username](https://github.com/pocongcyber77)
 
 ---
 
-**⭐ Jika dokumentasi ini membantu, berikan star! ⭐**
+**⭐ Jika dokumentasi ini comel, berikan nilai A plzzzz! ⭐**
 
-Dibuat dengan ❤️ oleh Tim Kelompok Jarkom FP 2025
+Dibuat dengan tanpa turu oleh Tim Kelompok Jarkom FP 2025
 
-**Semoga mendapatkan nilai yang memuaskan! 🎉**
+**Semoga Bu Hafara Sehat selalu! 🎉**
 
 </div>
