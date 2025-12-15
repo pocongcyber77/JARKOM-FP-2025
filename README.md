@@ -4,11 +4,16 @@
   ![Tool](https://img.shields.io/badge/tool-Cisco%20Packet%20Tracer-orange.svg)
   ![License](https://img.shields.io/badge/license-Academic-green.svg)
 
+  ## Dikerjakan Oleh
+
+  | Nama | NRP |
+  |------|-----|
+  | Dina Rahmadani | 5027241065 | Arsitek Topology, CIDR, VLSM, Config & Kalkulasi
+  | Ahmad Ibnu Athaillah | 5027241024 | Unit tesing, Troubleshoot, Dokumentasi & Manual
+
   **Perancangan dan Implementasi Jaringan Komputer untuk Yayasan ARA**
 
   [Daftar Isi](#daftar-isi) • [Topologi](#topologi-jaringan) • [Subnetting](#subnetting) • [Konfigurasi](#konfigurasi) • [Verifikasi](#verifikasi)
-
-  </div>
 
   ---
 
@@ -1070,9 +1075,3 @@
 
   ---
 
-  ## Tim
-
-  | Nama | NRP |
-  |------|-----|
-  | Dina Rahmadani | 5027241065 |
-  | Ahmad Ibnu Athaillah | 5027241024 |
