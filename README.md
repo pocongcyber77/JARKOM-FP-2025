@@ -1,4 +1,4 @@
-# Final Project - Komunikasi Data dan Jaringan Komputer
+# Final Project - Komunikasi Data dan Jaringan Komputer 2025
   ![Semester](https://img.shields.io/badge/semester-Gasal%202025%2F2026-blue.svg)
   ![Tool](https://img.shields.io/badge/tool-Cisco%20Packet%20Tracer-orange.svg)
 
