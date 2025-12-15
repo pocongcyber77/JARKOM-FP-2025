@@ -1026,7 +1026,7 @@
   ## Struktur File
 
   ```
-  FP_Jarkom_Kelompok_XXX_YYY_ZZZ/
+  FP_Jarkom_Dina Rahmadani--065_Ibnu Athaillah-024
   │
   ├── README.md                          # Dokumentasi utama (file ini)
   │
