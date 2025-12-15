@@ -1007,8 +1007,8 @@
 
   **Sampel Host Tambahan (internal subnet)**
   - 10.0.2.128 | 10.0.2.255  
-    ![ping 10.0.2.128](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_2_128.png)
-    ![ping 10.0.2.255](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_2_255.png)
+    ![ping 10.0.2.128](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_2_128.png?raw=true)
+    ![ping 10.0.2.255](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_2_255.png?raw=true)
   - 10.0.3.126 | 10.0.3.253 | 10.0.3.254  
     ![ping 10.0.3.126](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_3_126.png)
     ![ping 10.0.3.253](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_3_253.png)
@@ -1021,11 +1021,6 @@
     ![ping 10.0.5.126](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_5_126.png)
     ![ping 10.0.5.253](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_5_253.png)
     ![ping 10.0.5.254](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_5_254.png)
-
-  **Cara Membaca Asset:**
-  - Setiap gambar menunjukkan hasil ping dari host sumber ke IP tujuan sesuai nama file
-  - Format: Cisco Packet Tracer PC Command Line 1.0 (TTL=127, time<1ms) dengan 0% packet loss
-  - Tiap kategori diurutkan sesuai topologi: VLSM (Gedung Utama), CIDR (ARA Tech), lalu router links (utama & alternatif)
 
   > **Screenshot lengkap semua verifikasi tersedia di dokumentasi**
 
