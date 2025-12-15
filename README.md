@@ -123,7 +123,7 @@ Yayasan ARA merupakan organisasi yang membawahi berbagai unit kerja pendidikan d
 
 <div align="center">
 
-![Topologi Jaringan](Assets/Topology.jpg)
+![Topologi Jaringan](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/Topology.jpg)
 
 *Diagram Topologi Lengkap Jaringan Yayasan ARA*
 
@@ -154,7 +154,7 @@ Yayasan ARA merupakan organisasi yang membawahi berbagai unit kerja pendidikan d
 
 <div align="center">
 
-![VLSM Subnetting](Assets/VLSM.jpg)
+![VLSM Subnetting](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/VLSM.jpg)
 
 *Visualisasi Subnetting VLSM Gedung Utama*
 
@@ -206,7 +206,7 @@ Yayasan ARA merupakan organisasi yang membawahi berbagai unit kerja pendidikan d
 
 <div align="center">
 
-![CIDR Subnetting](Assets/CIDR.jpg)
+![CIDR Subnetting](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/CIDR.jpg)
 
 *Visualisasi Subnetting CIDR Gedung ARA Tech*
 
@@ -699,6 +699,16 @@ traceroute [ip_destination_via_tunnel]
 ✅ Semua Host → Internet (8.8.8.8)
 ✅ Host Lantai 1 → Host Lantai 5 (via Static Routing)
 ```
+
+#### Simulasi Ping - Gedung Utama (VLSM)
+
+<div align="center">
+
+![Simulasi Ping Gedung Utama VLSM](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/Ping_Simulation_Gedung_Utama_VLSM.svg)
+
+*Simulasi Ping untuk Verifikasi Konektivitas Gedung Utama (VLSM)*
+
+</div>
 
 > **Screenshot lengkap semua verifikasi tersedia di dokumentasi**
 
