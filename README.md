@@ -751,6 +751,7 @@ FP_Jarkom_Kelompok_XXX_YYY_ZZZ/
 ### ⚠️ Persyaratan Tugas
 
 - ✅ Menggunakan Cisco Packet Tracer untuk semua konfigurasi
+- ✅ Tidak terlalu bergantung pada GenAI / Subnet Calculator
 - ✅ Menggunakan alamat IP private (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16)
 - ✅ Cadangan subnet ~20% untuk skalabilitas
 - ✅ Semua subnet dapat saling berkomunikasi
@@ -772,9 +773,9 @@ FP_Jarkom_Kelompok_XXX_YYY_ZZZ/
 
 | Nama | NRP | Kontribusi |
 |------|-----|------------|
-| Dina Rahmadani | 5027241065] | Topology, Config, Calculate, CIDR, VLSM |
-| [Nama Anggota 2] | 5027241024 | Testing, TroubleShoot, Reconfig, Documentation |
-
+| [Nama Anggota 1] | [NRP 1] | [Deskripsi kontribusi] |
+| [Nama Anggota 2] | [NRP 2] | [Deskripsi kontribusi] |
+| [Nama Anggota 3] | [NRP 3] | [Deskripsi kontribusi] |
 
 ---
 
@@ -795,9 +796,9 @@ FP_Jarkom_Kelompok_XXX_YYY_ZZZ/
 |--------|------------|
 | **Mata Kuliah** | Komunikasi Data dan Jaringan Komputer |
 | **Semester** | Gasal 2025/2026 |
-| **Dosen** | Hafara Firdausi, S.Kom., M.Kom. |
-| **Institusi** | Institut Teknologi Sepuluh Nopember |
-| **Deadline** | Minggu, 14 Desember 2025, 23.59 (kelewat)|
+| **Dosen** | [Nama Dosen] |
+| **Institusi** | [Nama Universitas] |
+| **Deadline** | Minggu, 14 Desember 2025, 23.59 |
 
 ---
 
@@ -807,15 +808,15 @@ FP_Jarkom_Kelompok_XXX_YYY_ZZZ/
 
 Jika ada pertanyaan atau butuh bantuan, silakan hubungi:
 
-**Email**: [5027241024@student.its.ac.id]  
-**GitHub**: [@username](https://github.com/pocongcyber77)
+**Email**: [email@example.com]  
+**GitHub**: [@username](https://github.com/username)
 
 ---
 
-**⭐ Jika dokumentasi ini comel, berikan nilai A plzzzz! ⭐**
+**⭐ Jika dokumentasi ini membantu, berikan star! ⭐**
 
-Dibuat dengan tanpa turu oleh Tim Kelompok Jarkom FP 2025
+Dibuat dengan ❤️ oleh Tim Kelompok Jarkom FP 2025
 
-**Semoga Bu Hafara Sehat selalu! 🎉**
+**Semoga mendapatkan nilai yang memuaskan! 🎉**
 
 </div>
