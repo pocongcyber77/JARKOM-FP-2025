@@ -35,18 +35,6 @@
   - [Verifikasi](#verifikasi)
   - [Struktur File](#struktur-file)
   ---
-
-  ## Informasi Tugas
-
-  | Detail | Keterangan |
-  |--------|------------|
-  | **Mata Kuliah** | Komunikasi Data dan Jaringan Komputer |
-  | **Semester** | Gasal 2025/2026 |
-  | **Jenis** | Final Project (Kelompok) |
-  | **Deadline** | Minggu, 14 Desember 2025, 23.59 |
-  | **Tool** | Cisco Packet Tracer |
-  | **Format Pengumpulan** | File .ZIP berisi: .pkt, .png, .xlsx, .pdf/.md |
-
   ---
 
   ## Deskripsi Organisasi
