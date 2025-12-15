@@ -857,62 +857,66 @@
   #### Galeri Screenshot Ping Testing (PNG)
 
   > Semua hasil ping ditampilkan sebagai screenshot (PNG) dengan format CMD Cisco Packet Tracer. Nama file mengikuti IP tujuan ping.
+**VLSM & Router Links utama (Gedung Utama)**
+- 10.0.0.1 | 10.0.0.2 | 10.0.0.4 | 10.0.0.5 | 10.0.0.6 | 10.0.0.7 | 10.0.0.9 | 10.0.0.10  
+  ![ping 10.0.0.1](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_1.png?raw=true)
+  ![ping 10.0.0.2](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_2.png?raw=true)
+  ![ping 10.0.0.4](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_4.png?raw=true)
+  ![ping 10.0.0.5](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_5.png?raw=true)
+  ![ping 10.0.0.6](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_6.png?raw=true)
+  ![ping 10.0.0.7](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_7.png?raw=true)
+  ![ping 10.0.0.9](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_9.png?raw=true)
+  ![ping 10.0.0.10](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_10.png?raw=true)
 
-  **VLSM & Router Links utama (Gedung Utama)**
-  - 10.0.0.1 | 10.0.0.2 | 10.0.0.4 | 10.0.0.5 | 10.0.0.6 | 10.0.0.7 | 10.0.0.9 | 10.0.0.10  
-    ![ping 10.0.0.1](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_1.png)
-    ![ping 10.0.0.2](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_2.png)
-    ![ping 10.0.0.4](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_4.png)
-    ![ping 10.0.0.5](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_5.png)
-    ![ping 10.0.0.6](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_6.png)
-    ![ping 10.0.0.7](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_7.png)
-    ![ping 10.0.0.9](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_9.png)
-    ![ping 10.0.0.10](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_10.png)
-  - 10.0.0.13 | 10.0.0.14 | 10.0.0.17 | 10.0.0.18 | 10.0.0.21 | 10.0.0.22 | 10.0.0.25 | 10.0.0.26  
-    ![ping 10.0.0.13](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_13.png)
-    ![ping 10.0.0.14](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_14.png)
-    ![ping 10.0.0.17](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_17.png)
-    ![ping 10.0.0.18](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_18.png)
-    ![ping 10.0.0.21](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_21.png)
-    ![ping 10.0.0.22](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_22.png)
-    ![ping 10.0.0.25](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_25.png)
-    ![ping 10.0.0.26](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_26.png)
-  - 10.0.0.33 | 10.0.0.40 | 10.0.0.47 | 10.0.0.54 | 10.0.0.61 | 10.0.0.62 | 10.0.0.65 | 10.0.0.80  
-    ![ping 10.0.0.33](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_33.png)
-    ![ping 10.0.0.40](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_40.png)
-    ![ping 10.0.0.47](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_47.png)
-    ![ping 10.0.0.54](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_54.png)
-    ![ping 10.0.0.61](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_61.png)
-    ![ping 10.0.0.62](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_62.png)
-    ![ping 10.0.0.65](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_65.png)
-    ![ping 10.0.0.80](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_80.png)
-  - 10.0.0.95 | 10.0.0.110 | 10.0.0.125 | 10.0.0.126 | 10.0.0.129 | 10.0.0.160 | 10.0.0.191 | 10.0.0.222 | 10.0.0.253 | 10.0.0.254  
-    ![ping 10.0.0.95](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_95.png)
-    ![ping 10.0.0.110](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_110.png)
-    ![ping 10.0.0.125](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_125.png)
-    ![ping 10.0.0.126](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_126.png)
-    ![ping 10.0.0.129](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_129.png)
-    ![ping 10.0.0.160](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_160.png)
-    ![ping 10.0.0.191](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_191.png)
-    ![ping 10.0.0.222](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_222.png)
-    ![ping 10.0.0.253](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_253.png)
-    ![ping 10.0.0.254](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_0_254.png)
+- 10.0.0.13 | 10.0.0.14 | 10.0.0.17 | 10.0.0.18 | 10.0.0.21 | 10.0.0.22 | 10.0.0.25 | 10.0.0.26  
+  ![ping 10.0.0.13](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_13.png?raw=true)
+  ![ping 10.0.0.14](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_14.png?raw=true)
+  ![ping 10.0.0.17](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_17.png?raw=true)
+  ![ping 10.0.0.18](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_18.png?raw=true)
+  ![ping 10.0.0.21](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_21.png?raw=true)
+  ![ping 10.0.0.22](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_22.png?raw=true)
+  ![ping 10.0.0.25](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_25.png?raw=true)
+  ![ping 10.0.0.26](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_26.png?raw=true)
 
-  **CIDR (Gedung ARA Tech)**
-  - 10.0.6.1 | 10.0.6.2 | 10.0.6.16 | 10.0.6.31 | 10.0.6.46 | 10.0.6.61 | 10.0.6.62 | 10.0.6.65 | 10.0.6.68 | 10.0.6.71 | 10.0.6.74 | 10.0.6.77 | 10.0.6.78  
-    ![ping 10.0.6.1](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_1.png)
-    ![ping 10.0.6.2](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_2.png)
-    ![ping 10.0.6.16](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_16.png)
-    ![ping 10.0.6.31](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_31.png)
-    ![ping 10.0.6.46](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_46.png)
-    ![ping 10.0.6.61](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_61.png)
-    ![ping 10.0.6.62](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_62.png)
-    ![ping 10.0.6.65](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_65.png)
-    ![ping 10.0.6.68](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_68.png)
-    ![ping 10.0.6.71](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_71.png)
-    ![ping 10.0.6.74](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_74.png)
-    ![ping 10.0.6.77](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_77.png)
-    ![ping 10.0.6.78](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_78.png)
+- 10.0.0.33 | 10.0.0.40 | 10.0.0.47 | 10.0.0.54 | 10.0.0.61 | 10.0.0.62 | 10.0.0.65 | 10.0.0.80  
+  ![ping 10.0.0.33](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_33.png?raw=true)
+  ![ping 10.0.0.40](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_40.png?raw=true)
+  ![ping 10.0.0.47](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_47.png?raw=true)
+  ![ping 10.0.0.54](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_54.png?raw=true)
+  ![ping 10.0.0.61](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_61.png?raw=true)
+  ![ping 10.0.0.62](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_62.png?raw=true)
+  ![ping 10.0.0.65](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_65.png?raw=true)
+  ![ping 10.0.0.80](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_80.png?raw=true)
+
+- 10.0.0.95 | 10.0.0.110 | 10.0.0.125 | 10.0.0.126 | 10.0.0.129 | 10.0.0.160 | 10.0.0.191 | 10.0.0.222 | 10.0.0.253 | 10.0.0.254  
+  ![ping 10.0.0.95](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_95.png?raw=true)
+  ![ping 10.0.0.110](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_110.png?raw=true)
+  ![ping 10.0.0.125](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_125.png?raw=true)
+  ![ping 10.0.0.126](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_126.png?raw=true)
+  ![ping 10.0.0.129](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_129.png?raw=true)
+  ![ping 10.0.0.160](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_160.png?raw=true)
+  ![ping 10.0.0.191](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_191.png?raw=true)
+  ![ping 10.0.0.222](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_222.png?raw=true)
+  ![ping 10.0.0.253](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_253.png?raw=true)
+  ![ping 10.0.0.254](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_0_254.png?raw=true)
+
+
+**CIDR (Gedung ARA Tech)**
+- 10.0.6.1 | 10.0.6.2 | 10.0.6.16 | 10.0.6.31 | 10.0.6.46 | 10.0.6.61 | 10.0.6.62 | 10.0.6.65 | 10.0.6.68 | 10.0.6.71 | 10.0.6.74 | 10.0.6.77 | 10.0.6.78  
+  ![ping 10.0.6.1](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_6_1.png?raw=true)
+  ![ping 10.0.6.2](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_6_2.png?raw=true)
+  ![ping 10.0.6.16](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_6_16.png?raw=true)
+  ![ping 10.0.6.31](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_6_31.png?raw=true)
+  ![ping 10.0.6.46](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_6_46.png?raw=true)
+  ![ping 10.0.6.61](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_6_61.png?raw=true)
+  ![ping 10.0.6.62](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_6_62.png?raw=true)
+  ![ping 10.0.6.65](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_6_65.png?raw=true)
+  ![ping 10.0.6.68](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_6_68.png?raw=true)
+  ![ping 10.0.6.71](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_6_71.png?raw=true)
+  ![ping 10.0.6.74](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_6_74.png?raw=true)
+  ![ping 10.0.6.77](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_6_77.png?raw=true)
+  ![ping 10.0.6.78](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_6_78.png?raw=true)
+
   - 10.0.6.129 | 10.0.6.136 | 10.0.6.143 | 10.0.6.150 | 10.0.6.157 | 10.0.6.158  
     ![ping 10.0.6.129](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_129.png)
     ![ping 10.0.6.136](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_136.png)
