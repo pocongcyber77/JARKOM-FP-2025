@@ -917,13 +917,6 @@
   ![ping 10.0.6.77](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_6_77.png?raw=true)
   ![ping 10.0.6.78](https://github.com/pocongcyber77/JARKOM-FP-2025/blob/main/Assets/png/ping_10_0_6_78.png?raw=true)
 
-  - 10.0.6.129 | 10.0.6.136 | 10.0.6.143 | 10.0.6.150 | 10.0.6.157 | 10.0.6.158  
-    ![ping 10.0.6.129](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_129.png)
-    ![ping 10.0.6.136](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_136.png)
-    ![ping 10.0.6.143](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_143.png)
-    ![ping 10.0.6.150](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_150.png)
-    ![ping 10.0.6.157](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_157.png)
-    ![ping 10.0.6.158](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_6_158.png)
   - 10.0.8.1 | 10.0.8.16 | 10.0.8.31 | 10.0.8.46 | 10.0.8.61 | 10.0.8.62 | 10.0.8.65 | 10.0.8.72 | 10.0.8.79 | 10.0.8.86 | 10.0.8.93 | 10.0.8.94  
     ![ping 10.0.8.1](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_8_1.png)
     ![ping 10.0.8.16](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/png/ping_10_0_8_16.png)
