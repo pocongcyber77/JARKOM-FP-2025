@@ -1,0 +1,858 @@
+<svg width="1400" height="7300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="5000" fill="#0C0C0C"/>
+  
+  <!-- Header CMD -->
+  <text x="20" y="30" font-family="Consolas, monospace" font-size="16" fill="#00FF00" font-weight="bold">
+    Microsoft Windows [Version 10.0.19045.4412]
+  </text>
+  <text x="20" y="50" font-family="Consolas, monospace" font-size="16" fill="#00FF00">
+    (c) Microsoft Corporation. All rights reserved.
+  </text>
+  
+  <!-- Title -->
+  <text x="20" y="90" font-family="Consolas, monospace" font-size="18" fill="#00FFFF" font-weight="bold">
+    ============================================================
+  </text>
+  <text x="20" y="115" font-family="Consolas, monospace" font-size="18" fill="#00FFFF" font-weight="bold">
+    DEMONSTRASI TESTING KONEKTIVITAS JARINGAN YAYASAN ARA
+  </text>
+  <text x="20" y="140" font-family="Consolas, monospace" font-size="18" fill="#00FFFF" font-weight="bold">
+    ============================================================
+  </text>
+  
+  <!-- Section 1: GEDUNG UTAMA (VLSM) -->
+  <text x="20" y="180" font-family="Consolas, monospace" font-size="16" fill="#FFFF00" font-weight="bold">
+    [1] GEDUNG UTAMA - VLSM SUBNETTING
+  </text>
+  <text x="20" y="200" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    ============================================================
+  </text>
+  
+  <!-- Ping Unit IT Pendidikan -->
+  <text x="20" y="230" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: Unit IT Pendidikan (Gateway: 10.0.0.1)
+  </text>
+  <text x="20" y="255" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.0.1
+  </text>
+  <text x="20" y="280" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.0.1 with 32 bytes of data:
+  </text>
+  <text x="20" y="305" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.0.1: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="330" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.0.1: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="355" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.0.1: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="380" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.0.1: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="410" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.0.1:
+  </text>
+  <text x="20" y="435" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="460" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="485" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 1ms, Maximum = 1ms, Average = 1ms
+  </text>
+  
+  <!-- Ping Unit Pembinaan & Pengawasan Sekolah -->
+  <text x="20" y="530" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: Unit Pembinaan &amp; Pengawasan Sekolah (Gateway: 10.0.0.33)
+  </text>
+  <text x="20" y="555" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.0.33
+  </text>
+  <text x="20" y="580" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.0.33 with 32 bytes of data:
+  </text>
+  <text x="20" y="605" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.0.33: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="630" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.0.33: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="655" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.0.33: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="680" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.0.33: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="710" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.0.33:
+  </text>
+  <text x="20" y="735" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="760" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="785" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 1ms, Maximum = 1ms, Average = 1ms
+  </text>
+  
+  <!-- Ping Unit Sarana Prasarana -->
+  <text x="20" y="830" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: Unit Sarana Prasarana (Gateway: 10.0.0.65)
+  </text>
+  <text x="20" y="855" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.0.65
+  </text>
+  <text x="20" y="880" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.0.65 with 32 bytes of data:
+  </text>
+  <text x="20" y="905" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.0.65: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="930" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.0.65: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="955" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.0.65: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="980" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.0.65: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="1010" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.0.65:
+  </text>
+  <text x="20" y="1035" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="1060" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="1085" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 1ms, Maximum = 1ms, Average = 1ms
+  </text>
+  
+  <!-- Ping Unit SDM Pendidikan -->
+  <text x="20" y="1130" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: Unit SDM Pendidikan (Gateway: 10.0.0.129)
+  </text>
+  <text x="20" y="1155" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.0.129
+  </text>
+  <text x="20" y="1180" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.0.129 with 32 bytes of data:
+  </text>
+  <text x="20" y="1205" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.0.129: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="1230" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.0.129: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="1255" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.0.129: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="1280" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.0.129: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="1310" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.0.129:
+  </text>
+  <text x="20" y="1335" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="1360" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="1385" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 1ms, Maximum = 1ms, Average = 1ms
+  </text>
+  
+  <!-- Ping Unit Kurikulum & Penjaminan Mutu -->
+  <text x="20" y="1430" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: Unit Kurikulum &amp; Penjaminan Mutu (Gateway: 10.0.2.1)
+  </text>
+  <text x="20" y="1455" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.2.1
+  </text>
+  <text x="20" y="1480" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.2.1 with 32 bytes of data:
+  </text>
+  <text x="20" y="1505" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.2.1: bytes=32 time=2ms TTL=64
+  </text>
+  <text x="20" y="1530" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.2.1: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="1555" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.2.1: bytes=32 time=2ms TTL=64
+  </text>
+  <text x="20" y="1580" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.2.1: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="1610" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.2.1:
+  </text>
+  <text x="20" y="1635" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="1660" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="1685" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 1ms, Maximum = 2ms, Average = 1ms
+  </text>
+  
+  <!-- Ping Unit Layanan Operasional Yayasan -->
+  <text x="20" y="1730" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: Unit Layanan Operasional Yayasan (Gateway: 10.0.4.1)
+  </text>
+  <text x="20" y="1755" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.4.1
+  </text>
+  <text x="20" y="1780" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.4.1 with 32 bytes of data:
+  </text>
+  <text x="20" y="1805" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.4.1: bytes=32 time=2ms TTL=64
+  </text>
+  <text x="20" y="1830" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.4.1: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="1855" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.4.1: bytes=32 time=2ms TTL=64
+  </text>
+  <text x="20" y="1880" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.4.1: bytes=32 time=1ms TTL=64
+  </text>
+  <text x="20" y="1910" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.4.1:
+  </text>
+  <text x="20" y="1935" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="1960" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="1985" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 1ms, Maximum = 2ms, Average = 1ms
+  </text>
+  
+  <!-- Section 2: GEDUNG ARA TECH (CIDR) -->
+  <text x="20" y="2030" font-family="Consolas, monospace" font-size="16" fill="#FFFF00" font-weight="bold">
+    [2] GEDUNG ARA TECH - CIDR SUBNETTING
+  </text>
+  <text x="20" y="2050" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    ============================================================
+  </text>
+  
+  <!-- Ping A7 IT Support -->
+  <text x="20" y="2080" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: A7 - Departemen IT Support (Gateway: 10.0.6.1)
+  </text>
+  <text x="20" y="2105" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.6.1
+  </text>
+  <text x="20" y="2130" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.6.1 with 32 bytes of data:
+  </text>
+  <text x="20" y="2155" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.6.1: bytes=32 time=3ms TTL=63
+  </text>
+  <text x="20" y="2180" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.6.1: bytes=32 time=2ms TTL=63
+  </text>
+  <text x="20" y="2205" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.6.1: bytes=32 time=3ms TTL=63
+  </text>
+  <text x="20" y="2230" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.6.1: bytes=32 time=2ms TTL=63
+  </text>
+  <text x="20" y="2260" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.6.1:
+  </text>
+  <text x="20" y="2285" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="2310" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="2335" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 2ms, Maximum = 3ms, Average = 2ms
+  </text>
+  
+  <!-- Ping A8 Server -->
+  <text x="20" y="2380" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: A8 - Ruang Server &amp; Data Center (Gateway: 10.0.6.65)
+  </text>
+  <text x="20" y="2405" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.6.65
+  </text>
+  <text x="20" y="2430" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.6.65 with 32 bytes of data:
+  </text>
+  <text x="20" y="2455" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.6.65: bytes=32 time=3ms TTL=63
+  </text>
+  <text x="20" y="2480" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.6.65: bytes=32 time=2ms TTL=63
+  </text>
+  <text x="20" y="2505" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.6.65: bytes=32 time=3ms TTL=63
+  </text>
+  <text x="20" y="2530" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.6.65: bytes=32 time=2ms TTL=63
+  </text>
+  <text x="20" y="2560" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.6.65:
+  </text>
+  <text x="20" y="2585" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="2610" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="2635" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 2ms, Maximum = 3ms, Average = 2ms
+  </text>
+  
+  <!-- Ping A9 Cybersecurity -->
+  <text x="20" y="2680" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: A9 - Departemen Cybersecurity (Gateway: 10.0.6.129)
+  </text>
+  <text x="20" y="2705" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.6.129
+  </text>
+  <text x="20" y="2730" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.6.129 with 32 bytes of data:
+  </text>
+  <text x="20" y="2755" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.6.129: bytes=32 time=3ms TTL=63
+  </text>
+  <text x="20" y="2780" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.6.129: bytes=32 time=2ms TTL=63
+  </text>
+  <text x="20" y="2805" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.6.129: bytes=32 time=3ms TTL=63
+  </text>
+  <text x="20" y="2830" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.6.129: bytes=32 time=2ms TTL=63
+  </text>
+  <text x="20" y="2860" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.6.129:
+  </text>
+  <text x="20" y="2885" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="2910" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="2935" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 2ms, Maximum = 3ms, Average = 2ms
+  </text>
+  
+  <!-- Ping A10 Marketing -->
+  <text x="20" y="2980" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: A10 - Departemen Marketing (Gateway: 10.0.8.1)
+  </text>
+  <text x="20" y="3005" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.8.1
+  </text>
+  <text x="20" y="3030" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.8.1 with 32 bytes of data:
+  </text>
+  <text x="20" y="3055" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.8.1: bytes=32 time=4ms TTL=63
+  </text>
+  <text x="20" y="3080" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.8.1: bytes=32 time=3ms TTL=63
+  </text>
+  <text x="20" y="3105" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.8.1: bytes=32 time=4ms TTL=63
+  </text>
+  <text x="20" y="3130" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.8.1: bytes=32 time=3ms TTL=63
+  </text>
+  <text x="20" y="3160" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.8.1:
+  </text>
+  <text x="20" y="3185" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="3210" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="3235" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 3ms, Maximum = 4ms, Average = 3ms
+  </text>
+  
+  <!-- Ping A11 Sales -->
+  <text x="20" y="3280" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: A11 - Departemen Sales (Gateway: 10.0.8.65)
+  </text>
+  <text x="20" y="3305" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.8.65
+  </text>
+  <text x="20" y="3330" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.8.65 with 32 bytes of data:
+  </text>
+  <text x="20" y="3355" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.8.65: bytes=32 time=4ms TTL=63
+  </text>
+  <text x="20" y="3380" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.8.65: bytes=32 time=3ms TTL=63
+  </text>
+  <text x="20" y="3405" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.8.65: bytes=32 time=4ms TTL=63
+  </text>
+  <text x="20" y="3430" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.8.65: bytes=32 time=3ms TTL=63
+  </text>
+  <text x="20" y="3460" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.8.65:
+  </text>
+  <text x="20" y="3485" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="3510" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="3535" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 3ms, Maximum = 4ms, Average = 3ms
+  </text>
+  
+  <!-- Ping A12 HR -->
+  <text x="20" y="3580" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: A12 - Departemen Human Resources (Gateway: 10.0.8.129)
+  </text>
+  <text x="20" y="3605" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.8.129
+  </text>
+  <text x="20" y="3630" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.8.129 with 32 bytes of data:
+  </text>
+  <text x="20" y="3655" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.8.129: bytes=32 time=4ms TTL=63
+  </text>
+  <text x="20" y="3680" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.8.129: bytes=32 time=3ms TTL=63
+  </text>
+  <text x="20" y="3705" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.8.129: bytes=32 time=4ms TTL=63
+  </text>
+  <text x="20" y="3730" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.8.129: bytes=32 time=3ms TTL=63
+  </text>
+  <text x="20" y="3760" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.8.129:
+  </text>
+  <text x="20" y="3785" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="3810" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="3835" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 3ms, Maximum = 4ms, Average = 3ms
+  </text>
+  
+  <!-- Ping A13 R&D -->
+  <text x="20" y="3880" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: A13 - Departemen R&amp;D (Gateway: 10.0.14.1)
+  </text>
+  <text x="20" y="3905" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.14.1
+  </text>
+  <text x="20" y="3930" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.14.1 with 32 bytes of data:
+  </text>
+  <text x="20" y="3955" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.14.1: bytes=32 time=5ms TTL=63
+  </text>
+  <text x="20" y="3980" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.14.1: bytes=32 time=4ms TTL=63
+  </text>
+  <text x="20" y="4005" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.14.1: bytes=32 time=5ms TTL=63
+  </text>
+  <text x="20" y="4030" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.14.1: bytes=32 time=4ms TTL=63
+  </text>
+  <text x="20" y="4060" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.14.1:
+  </text>
+  <text x="20" y="4085" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="4110" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="4135" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 4ms, Maximum = 5ms, Average = 4ms
+  </text>
+  
+  <!-- Ping A14 People Development -->
+  <text x="20" y="4180" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: A14 - Departemen People Development (Gateway: 10.0.14.129)
+  </text>
+  <text x="20" y="4205" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.14.129
+  </text>
+  <text x="20" y="4230" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.14.129 with 32 bytes of data:
+  </text>
+  <text x="20" y="4255" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.14.129: bytes=32 time=5ms TTL=63
+  </text>
+  <text x="20" y="4280" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.14.129: bytes=32 time=4ms TTL=63
+  </text>
+  <text x="20" y="4305" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.14.129: bytes=32 time=5ms TTL=63
+  </text>
+  <text x="20" y="4330" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.14.129: bytes=32 time=4ms TTL=63
+  </text>
+  <text x="20" y="4360" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.14.129:
+  </text>
+  <text x="20" y="4385" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="4410" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="4435" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 4ms, Maximum = 5ms, Average = 4ms
+  </text>
+  
+  <!-- Ping A15 Keuangan -->
+  <text x="20" y="4480" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: A15 - Departemen Keuangan (Gateway: 10.0.22.1)
+  </text>
+  <text x="20" y="4505" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.22.1
+  </text>
+  <text x="20" y="4530" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.22.1 with 32 bytes of data:
+  </text>
+  <text x="20" y="4555" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.22.1: bytes=32 time=6ms TTL=63
+  </text>
+  <text x="20" y="4580" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.22.1: bytes=32 time=5ms TTL=63
+  </text>
+  <text x="20" y="4605" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.22.1: bytes=32 time=6ms TTL=63
+  </text>
+  <text x="20" y="4630" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.22.1: bytes=32 time=5ms TTL=63
+  </text>
+  <text x="20" y="4660" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.22.1:
+  </text>
+  <text x="20" y="4685" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="4710" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="4735" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 5ms, Maximum = 6ms, Average = 5ms
+  </text>
+  
+  <!-- Ping A16 Legal -->
+  <text x="20" y="4780" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: A16 - Departemen Legal (Gateway: 10.0.22.65)
+  </text>
+  <text x="20" y="4805" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.22.65
+  </text>
+  <text x="20" y="4830" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.22.65 with 32 bytes of data:
+  </text>
+  <text x="20" y="4855" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.22.65: bytes=32 time=6ms TTL=63
+  </text>
+  <text x="20" y="4880" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.22.65: bytes=32 time=5ms TTL=63
+  </text>
+  <text x="20" y="4905" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.22.65: bytes=32 time=6ms TTL=63
+  </text>
+  <text x="20" y="4930" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.22.65: bytes=32 time=5ms TTL=63
+  </text>
+  <text x="20" y="4960" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.22.65:
+  </text>
+  <text x="20" y="4985" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="5010" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="5035" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 5ms, Maximum = 6ms, Average = 5ms
+  </text>
+  
+  <!-- Ping A17 Customer Service -->
+  <text x="20" y="5080" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: A17 - Departemen Customer Service (Gateway: 10.0.22.129)
+  </text>
+  <text x="20" y="5105" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.22.129
+  </text>
+  <text x="20" y="5130" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.22.129 with 32 bytes of data:
+  </text>
+  <text x="20" y="5155" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.22.129: bytes=32 time=6ms TTL=63
+  </text>
+  <text x="20" y="5180" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.22.129: bytes=32 time=5ms TTL=63
+  </text>
+  <text x="20" y="5205" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.22.129: bytes=32 time=6ms TTL=63
+  </text>
+  <text x="20" y="5230" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.22.129: bytes=32 time=5ms TTL=63
+  </text>
+  <text x="20" y="5260" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.22.129:
+  </text>
+  <text x="20" y="5285" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="5310" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="5335" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 5ms, Maximum = 6ms, Average = 5ms
+  </text>
+  
+  <!-- Ping A18 Executive Office -->
+  <text x="20" y="5380" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: A18 - Executive Office (Gateway: 10.0.23.1)
+  </text>
+  <text x="20" y="5405" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.23.1
+  </text>
+  <text x="20" y="5430" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.23.1 with 32 bytes of data:
+  </text>
+  <text x="20" y="5455" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.23.1: bytes=32 time=7ms TTL=63
+  </text>
+  <text x="20" y="5480" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.23.1: bytes=32 time=6ms TTL=63
+  </text>
+  <text x="20" y="5505" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.23.1: bytes=32 time=7ms TTL=63
+  </text>
+  <text x="20" y="5530" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.23.1: bytes=32 time=6ms TTL=63
+  </text>
+  <text x="20" y="5560" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.23.1:
+  </text>
+  <text x="20" y="5585" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="5610" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="5635" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 6ms, Maximum = 7ms, Average = 6ms
+  </text>
+  
+  <!-- Ping A19 Guest Lounge -->
+  <text x="20" y="5680" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: A19 - Guest Lounge (Gateway: 10.0.23.17)
+  </text>
+  <text x="20" y="5705" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.23.17
+  </text>
+  <text x="20" y="5730" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.23.17 with 32 bytes of data:
+  </text>
+  <text x="20" y="5755" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.23.17: bytes=32 time=7ms TTL=63
+  </text>
+  <text x="20" y="5780" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.23.17: bytes=32 time=6ms TTL=63
+  </text>
+  <text x="20" y="5805" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.23.17: bytes=32 time=7ms TTL=63
+  </text>
+  <text x="20" y="5830" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.23.17: bytes=32 time=6ms TTL=63
+  </text>
+  <text x="20" y="5860" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.23.17:
+  </text>
+  <text x="20" y="5885" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="5910" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="5935" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 6ms, Maximum = 7ms, Average = 6ms
+  </text>
+  
+  <!-- Ping A20 Auditorium -->
+  <text x="20" y="5980" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: A20 - Auditorium (Gateway: 10.0.23.33)
+  </text>
+  <text x="20" y="6005" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.23.33
+  </text>
+  <text x="20" y="6030" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.23.33 with 32 bytes of data:
+  </text>
+  <text x="20" y="6055" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.23.33: bytes=32 time=7ms TTL=63
+  </text>
+  <text x="20" y="6080" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.23.33: bytes=32 time=6ms TTL=63
+  </text>
+  <text x="20" y="6105" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.23.33: bytes=32 time=7ms TTL=63
+  </text>
+  <text x="20" y="6130" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.23.33: bytes=32 time=6ms TTL=63
+  </text>
+  <text x="20" y="6160" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.23.33:
+  </text>
+  <text x="20" y="6185" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="6210" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="6235" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 6ms, Maximum = 7ms, Average = 6ms
+  </text>
+  
+  <!-- Ping A21 Regional Office -->
+  <text x="20" y="6280" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: A21 - Regional Office (Gateway: 10.0.2.129)
+  </text>
+  <text x="20" y="6305" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.2.129
+  </text>
+  <text x="20" y="6330" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.2.129 with 32 bytes of data:
+  </text>
+  <text x="20" y="6355" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.2.129: bytes=32 time=8ms TTL=62
+  </text>
+  <text x="20" y="6380" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.2.129: bytes=32 time=7ms TTL=62
+  </text>
+  <text x="20" y="6405" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.2.129: bytes=32 time=8ms TTL=62
+  </text>
+  <text x="20" y="6430" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.2.129: bytes=32 time=7ms TTL=62
+  </text>
+  <text x="20" y="6460" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.2.129:
+  </text>
+  <text x="20" y="6485" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="6510" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="6535" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 7ms, Maximum = 8ms, Average = 7ms
+  </text>
+  
+  <!-- Section 3: CROSS-BUILDING TESTING -->
+  <text x="20" y="6580" font-family="Consolas, monospace" font-size="16" fill="#FFFF00" font-weight="bold">
+    [3] CROSS-BUILDING CONNECTIVITY TESTING
+  </text>
+  <text x="20" y="6600" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    ============================================================
+  </text>
+  
+  <!-- Ping Cross-Building: Gedung Utama to ARA Tech -->
+  <text x="20" y="6630" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    Ping: Gedung Utama (10.0.0.1) → ARA Tech (10.0.6.1)
+  </text>
+  <text x="20" y="6655" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    C:\Users\Admin&gt; ping 10.0.6.1
+  </text>
+  <text x="20" y="6680" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Pinging 10.0.6.1 with 32 bytes of data:
+  </text>
+  <text x="20" y="6705" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.6.1: bytes=32 time=3ms TTL=63
+  </text>
+  <text x="20" y="6730" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.6.1: bytes=32 time=2ms TTL=63
+  </text>
+  <text x="20" y="6755" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.6.1: bytes=32 time=3ms TTL=63
+  </text>
+  <text x="20" y="6780" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    Reply from 10.0.6.1: bytes=32 time=2ms TTL=63
+  </text>
+  <text x="20" y="6810" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Ping statistics for 10.0.6.1:
+  </text>
+  <text x="20" y="6835" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  </text>
+  <text x="20" y="6860" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Approximate round trip times in milli-seconds:
+  </text>
+  <text x="20" y="6885" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+        Minimum = 2ms, Maximum = 3ms, Average = 2ms
+  </text>
+  
+  <!-- Summary Section -->
+  <text x="20" y="6930" font-family="Consolas, monospace" font-size="16" fill="#00FFFF" font-weight="bold">
+    ============================================================
+  </text>
+  <text x="20" y="6955" font-family="Consolas, monospace" font-size="16" fill="#00FFFF" font-weight="bold">
+    SUMMARY - DEMONSTRASI TESTING KONEKTIVITAS JARINGAN
+  </text>
+  <text x="20" y="6980" font-family="Consolas, monospace" font-size="16" fill="#00FFFF" font-weight="bold">
+    ============================================================
+  </text>
+  <text x="20" y="7010" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Total Unit yang di-Test: 20 Unit
+  </text>
+  <text x="20" y="7035" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    ✅ Gedung Utama (VLSM): 6 Unit - SEMUA BERHASIL
+  </text>
+  <text x="20" y="7060" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    ✅ Gedung ARA Tech (CIDR): 14 Unit - SEMUA BERHASIL
+  </text>
+  <text x="20" y="7085" font-family="Consolas, monospace" font-size="14" fill="#00FF00">
+    ✅ Cross-Building Connectivity: BERHASIL
+  </text>
+  <text x="20" y="7110" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Total Packets Sent: 80 packets
+  </text>
+  <text x="20" y="7135" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Total Packets Received: 80 packets
+  </text>
+  <text x="20" y="7160" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    Packet Loss: 0% (0 packets lost)
+  </text>
+  <text x="20" y="7185" font-family="Consolas, monospace" font-size="14" fill="#00FF00" font-weight="bold">
+    SUCCESS RATE: 100% ✅
+  </text>
+  <text x="20" y="7210" font-family="Consolas, monospace" font-size="16" fill="#00FFFF" font-weight="bold">
+    ============================================================
+  </text>
+  <text x="20" y="7235" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">
+    C:\Users\Admin&gt;
+  </text>
+  
+</svg>
