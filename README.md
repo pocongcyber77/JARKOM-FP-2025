@@ -1,4 +1,4 @@
-# 📡 Final Project - Komunikasi Data dan Jaringan Komputer
+# Final Project - Komunikasi Data dan Jaringan Komputer
 
 <div align="center">
 
@@ -9,34 +9,34 @@
 
 **Perancangan dan Implementasi Jaringan Komputer untuk Yayasan ARA**
 
-[📋 Daftar Isi](#-daftar-isi) • [🏗️ Topologi](#️-topologi-jaringan) • [📊 Subnetting](#-subnetting) • [⚙️ Konfigurasi](#️-konfigurasi) • [✅ Verifikasi](#-verifikasi)
+[Daftar Isi](#daftar-isi) • [Topologi](#topologi-jaringan) • [Subnetting](#subnetting) • [Konfigurasi](#konfigurasi) • [Verifikasi](#verifikasi)
 
 </div>
 
 ---
 
-## 📋 Daftar Isi
+## Daftar Isi
 
-- [📖 Informasi Tugas](#-informasi-tugas)
-- [🏢 Deskripsi Organisasi](#-deskripsi-organisasi)
-- [🏗️ Topologi Jaringan](#️-topologi-jaringan)
-- [📊 Subnetting](#-subnetting)
+- [Informasi Tugas](#informasi-tugas)
+- [Deskripsi Organisasi](#deskripsi-organisasi)
+- [Topologi Jaringan](#topologi-jaringan)
+- [Subnetting](#subnetting)
   - [Gedung Utama (VLSM)](#1-subnetting-gedung-utama-vlsm)
   - [Gedung ARA Tech (CIDR)](#2-subnetting-gedung-ara-tech-cidr)
-- [⚙️ Konfigurasi](#️-konfigurasi)
+- [Konfigurasi](#konfigurasi)
   - [IP Addressing](#1-konfigurasi-ip-addressing)
   - [DHCP Configuration](#2-konfigurasi-dhcp)
   - [Static Routing](#3-static-routing)
   - [Dynamic Routing (OSPF/EIGRP)](#4-dynamic-routing-ospfeigrp)
   - [NAT Overload (PAT)](#5-nat-overload-pat)
   - [GRE Tunnel](#6-gre-tunnel)
-- [✅ Verifikasi](#-verifikasi)
-- [📁 Struktur File](#-struktur-file)
-- [👥 Tim](#-tim)
+- [Verifikasi](#verifikasi)
+- [Struktur File](#struktur-file)
+- [Tim](#tim)
 
 ---
 
-## 📖 Informasi Tugas
+## Informasi Tugas
 
 | Detail | Keterangan |
 |--------|------------|
@@ -49,7 +49,7 @@
 
 ---
 
-## 🏢 Deskripsi Organisasi
+## Deskripsi Organisasi
 
 ### Yayasan ARA
 
@@ -57,11 +57,11 @@ Yayasan ARA merupakan organisasi yang membawahi berbagai unit kerja pendidikan d
 
 ---
 
-## 🏗️ Topologi Jaringan
+## Topologi Jaringan
 
-### 📍 Lokasi dan Kebutuhan Host
+### Lokasi dan Kebutuhan Host
 
-#### 🏛️ Gedung Utama Yayasan ARA
+#### Gedung Utama Yayasan ARA
 
 | Unit | Jumlah Host | Keterangan |
 |------|-------------|------------|
@@ -73,7 +73,7 @@ Yayasan ARA merupakan organisasi yang membawahi berbagai unit kerja pendidikan d
 | Unit Layanan Operasional Yayasan | 380 host | - |
 | **TOTAL** | **764 host** | - |
 
-#### 🏢 Gedung ARA Tech
+#### Gedung ARA Tech
 
 ##### Lantai 1
 | Departemen | Jumlah Host | Keterangan |
@@ -111,7 +111,7 @@ Yayasan ARA merupakan organisasi yang membawahi berbagai unit kerja pendidikan d
 
 **TOTAL Gedung ARA Tech: 360 host**
 
-#### 🏪 Kantor Cabang
+#### Kantor Cabang
 
 | Lokasi | Jumlah Host | Keterangan |
 |--------|-------------|------------|
@@ -119,7 +119,7 @@ Yayasan ARA merupakan organisasi yang membawahi berbagai unit kerja pendidikan d
 
 ---
 
-### 🗺️ Diagram Topologi
+### Diagram Topologi
 
 <div align="center">
 
@@ -133,7 +133,7 @@ Yayasan ARA merupakan organisasi yang membawahi berbagai unit kerja pendidikan d
 
 ---
 
-## 📊 Subnetting
+## Subnetting
 
 ### 1. Subnetting Gedung Utama (VLSM)
 
@@ -171,9 +171,9 @@ Yayasan ARA merupakan organisasi yang membawahi berbagai unit kerja pendidikan d
 | **Router Link** | **10.0.6.0** | **255.255.255.252** | **/30** | **10.0.6.3** | **10.0.6.1 - 10.0.6.2** | **2** | **2** |
 | **TOTAL** | - | - | **/22** | - | - | **764** | **917** |
 
-> **📊 Detail perhitungan lengkap tersedia di file CSV**: [`Sheet/Pembagian IP - VLSM.csv`](Sheet/Pembagian%20IP%20-%20VLSM.csv)
+> **Detail perhitungan lengkap tersedia di file CSV**: [`Sheet/Pembagian IP - VLSM.csv`](Sheet/Pembagian%20IP%20-%20VLSM.csv)
 
-**📝 Catatan**: File CSV ini berisi perhitungan lengkap subnetting VLSM untuk semua unit di Gedung Utama, termasuk perhitungan cadangan 20% dan alokasi IP yang efisien.
+**Catatan**: File CSV ini berisi perhitungan lengkap subnetting VLSM untuk semua unit di Gedung Utama, termasuk perhitungan cadangan 20% dan alokasi IP yang efisien.
 
 ---
 
@@ -292,11 +292,11 @@ Untuk menyederhanakan routing, beberapa subnet digabungkan menggunakan teknik CI
 |--------|---------------|---------------|
 | K1 | P1 (/19) + R6-R2 (/30) | /18 |
 
-> **📊 Detail perhitungan lengkap tersedia di file CSV**: 
+> **Detail perhitungan lengkap tersedia di file CSV**: 
 > - [`Sheet/Penggabungan - CIDR.csv`](Sheet/Penggabungan%20-%20CIDR.csv) - Tabel proses supernetting bertahap
 > - [`Sheet/Pembagian IP - CIDR.csv`](Sheet/Pembagian%20IP%20-%20CIDR.csv) - Tabel subnetting CIDR per departemen
 
-**📝 Catatan**: File CSV ini berisi perhitungan lengkap subnetting CIDR untuk semua departemen di Gedung ARA Tech, termasuk proses supernetting (route aggregation) yang dilakukan secara bertahap untuk mengoptimalkan routing table.
+**Catatan**: File CSV ini berisi perhitungan lengkap subnetting CIDR untuk semua departemen di Gedung ARA Tech, termasuk proses supernetting (route aggregation) yang dilakukan secara bertahap untuk mengoptimalkan routing table.
 
 ---
 
@@ -325,13 +325,13 @@ Untuk menyederhanakan routing, beberapa subnet digabungkan menggunakan teknik CI
 | R7 - R8 (Alternatif) | 10.0.23.64 | 255.255.255.252 | /30 | 10.0.23.67 | 10.0.23.65 – 10.0.23.66 |
 | R2 - R6 (Alternatif) | 10.0.38.0 | 255.255.255.252 | /30 | 10.0.38.3 | 10.0.38.1 – 10.0.38.2 |
 
-> **📊 Detail lengkap tersedia di file CSV**: [`Sheet/Rute.csv`](Sheet/Rute.csv)
+> **Detail lengkap tersedia di file CSV**: [`Sheet/Rute.csv`](Sheet/Rute.csv)
 
-**📝 Catatan**: File CSV ini berisi informasi lengkap tentang semua subnet yang digunakan, termasuk subnet untuk departemen, link antar router, dan total kebutuhan host dengan cadangan 20%.
+**Catatan**: File CSV ini berisi informasi lengkap tentang semua subnet yang digunakan, termasuk subnet untuk departemen, link antar router, dan total kebutuhan host dengan cadangan 20%.
 
 ---
 
-## ⚙️ Konfigurasi
+## Konfigurasi
 
 ### 1. Konfigurasi IP Addressing
 
@@ -382,7 +382,7 @@ Konfigurasi untuk router-router di Gedung ARA Tech dan Kantor Cabang:
 - **R7**: Router Lantai 4 ARA Tech
 - **R8**: Router Lantai 5 ARA Tech & Kantor Cabang
 
-> **📁 Konfigurasi lengkap semua router tersedia di folder**: [`Routing/`](Routing/)
+> **Konfigurasi lengkap semua router tersedia di folder**: [`Routing/`](Routing/)
 > 
 > | File | Router | Fungsi |
 > |------|--------|--------|
@@ -395,7 +395,7 @@ Konfigurasi untuk router-router di Gedung ARA Tech dan Kantor Cabang:
 > | [`R7.cfg`](Routing/R7.cfg) | R7 | Router Lantai 4 ARA Tech |
 > | [`R8.cfg`](Routing/R8.cfg) | R8 | Router Lantai 5 & Branch |
 
-**📝 Catatan**: Semua file konfigurasi router menggunakan format Cisco IOS dan dapat langsung di-copy ke Cisco Packet Tracer atau router fisik.
+**Catatan**: Semua file konfigurasi router menggunakan format Cisco IOS dan dapat langsung di-copy ke Cisco Packet Tracer atau router fisik.
 
 ---
 
@@ -463,9 +463,9 @@ ip dhcp pool LAN_FA4
 
 Konfigurasi DHCP untuk semua departemen di Gedung ARA Tech dilakukan pada router-router di masing-masing lantai. Setiap router mengkonfigurasi DHCP pool untuk departemen yang terhubung.
 
-> **📁 Catatan**: Konfigurasi DHCP lengkap untuk semua departemen tersedia di file konfigurasi router di folder [`Routing/`](Routing/)
+> **Catatan**: Konfigurasi DHCP lengkap untuk semua departemen tersedia di file konfigurasi router di folder [`Routing/`](Routing/)
 
-**📝 Catatan**: Setiap router di Gedung ARA Tech mengkonfigurasi DHCP pool untuk departemen yang terhubung ke interface-nya. Konfigurasi DHCP mengikuti pola yang sama dengan Router R1, dengan network ID dan default-router yang disesuaikan dengan subnet masing-masing departemen.
+**Catatan**: Setiap router di Gedung ARA Tech mengkonfigurasi DHCP pool untuk departemen yang terhubung ke interface-nya. Konfigurasi DHCP mengikuti pola yang sama dengan Router R1, dengan network ID dan default-router yang disesuaikan dengan subnet masing-masing departemen.
 
 ---
 
@@ -632,7 +632,7 @@ ping 10.250.0.1  ! Dari Router Kantor Cabang
 
 ---
 
-## ✅ Verifikasi
+## Verifikasi
 
 ### 1. Verifikasi Konfigurasi IP
 
@@ -693,11 +693,11 @@ traceroute [ip_destination_via_tunnel]
 **Test Ping dari berbagai lokasi:**
 
 ```
-✅ Gedung Utama → Gedung ARA Tech
-✅ Gedung ARA Tech → Kantor Cabang
-✅ Gedung Utama → Kantor Cabang (via GRE Tunnel)
-✅ Semua Host → Internet (8.8.8.8)
-✅ Host Lantai 1 → Host Lantai 5 (via Static Routing)
+- Gedung Utama → Gedung ARA Tech
+- Gedung ARA Tech → Kantor Cabang
+- Gedung Utama → Kantor Cabang (via GRE Tunnel)
+- Semua Host → Internet (8.8.8.8)
+- Host Lantai 1 → Host Lantai 5 (via Static Routing)
 ```
 
 #### Simulasi Ping - Gedung Utama (VLSM)
@@ -710,123 +710,71 @@ traceroute [ip_destination_via_tunnel]
 
 </div>
 
+#### Demonstrasi Testing Lengkap - Semua Unit
+
+<div align="center">
+
+![Demonstrasi Testing Konektivitas](https://raw.githubusercontent.com/pocongcyber77/JARKOM-FP-2025/main/Assets/demonstrasi%20testing.svg)
+
+*Demonstrasi Testing Lengkap untuk Semua Unit - Format CMD Windows*
+
+</div>
+
+**Ringkasan Testing:**
+- **Gedung Utama (VLSM)**: 6 Unit - Semua berhasil (0% packet loss)
+- **Gedung ARA Tech (CIDR)**: 14 Unit - Semua berhasil (0% packet loss)
+- **Cross-Building Connectivity**: Berhasil
+- **Success Rate**: 100% (80/80 packets received)
+
 > **Screenshot lengkap semua verifikasi tersedia di dokumentasi**
 
 ---
 
-## 📁 Struktur File
+## Struktur File
 
 ```
 FP_Jarkom_Kelompok_XXX_YYY_ZZZ/
 │
-├── 📄 README.md                          # Dokumentasi utama (file ini)
+├── README.md                          # Dokumentasi utama (file ini)
 │
-├── 📂 Assets/                            # Asset gambar dan diagram
-│   ├── 📄 Topology.jpg                   # Diagram topologi jaringan
-│   ├── 📄 VLSM.jpg                       # Visualisasi subnetting VLSM
-│   └── 📄 CIDR.jpg                       # Visualisasi subnetting CIDR
+├── Assets/                            # Asset gambar dan diagram
+│   ├── Topology.jpg                   # Diagram topologi jaringan
+│   ├── VLSM.jpg                       # Visualisasi subnetting VLSM
+│   └── CIDR.jpg                       # Visualisasi subnetting CIDR
 │
-├── 📂 Sheet/                             # File CSV untuk tabel subnetting
-│   ├── 📄 Pembagian IP - VLSM.csv        # Tabel subnetting VLSM Gedung Utama
-│   ├── 📄 Pembagian IP - CIDR.csv        # Tabel subnetting CIDR ARA Tech
-│   ├── 📄 Penggabungan - CIDR.csv        # Tabel supernetting CIDR
-│   └── 📄 Rute.csv                       # Tabel routing dan link router
+├── Sheet/                             # File CSV untuk tabel subnetting
+│   ├── Pembagian IP - VLSM.csv        # Tabel subnetting VLSM Gedung Utama
+│   ├── Pembagian IP - CIDR.csv        # Tabel subnetting CIDR ARA Tech
+│   ├── Penggabungan - CIDR.csv        # Tabel supernetting CIDR
+│   └── Rute.csv                       # Tabel routing dan link router
 │
-├── 📂 Routing/                            # Konfigurasi router
-│   ├── 📄 R1.cfg                         # Router Gedung Utama
-│   ├── 📄 R2.cfg                         # Router ARA Tech ke Kantor Utama
-│   ├── 📄 R3.cfg                         # Router Lantai 1
-│   ├── 📄 R4.cfg                         # Router Lantai 2
-│   ├── 📄 R5.cfg                         # Router Lantai 3
-│   ├── 📄 R6.cfg                         # Router ARA Tech ke Branch
-│   ├── 📄 R7.cfg                         # Router Lantai 4
-│   └── 📄 R8.cfg                         # Router Lantai 5 & Branch
+├── Routing/                            # Konfigurasi router
+│   ├── R1.cfg                         # Router Gedung Utama
+│   ├── R2.cfg                         # Router ARA Tech ke Kantor Utama
+│   ├── R3.cfg                         # Router Lantai 1
+│   ├── R4.cfg                         # Router Lantai 2
+│   ├── R5.cfg                         # Router Lantai 3
+│   ├── R6.cfg                         # Router ARA Tech ke Branch
+│   ├── R7.cfg                         # Router Lantai 4
+│   └── R8.cfg                         # Router Lantai 5 & Branch
 │
-├── 📂 Project/                            # File project Packet Tracer
-│   └── 📄 Jarkom_FP_2025.pkt             # File Packet Tracer lengkap (jika ada)
+├── Project/                            # File project Packet Tracer
+│   └── Jarkom_FP_2025.pkt             # File Packet Tracer lengkap (jika ada)
 │
-└── 📂 Screenshots/                        # Screenshot verifikasi (opsional)
-    ├── 📂 IP_Configuration/               # Screenshot konfigurasi IP
-    ├── 📂 DHCP/                           # Screenshot konfigurasi DHCP
-    ├── 📂 Routing/                        # Screenshot routing (Static & Dynamic)
-    ├── 📂 NAT/                            # Screenshot konfigurasi NAT
-    ├── 📂 GRE_Tunnel/                     # Screenshot konfigurasi GRE Tunnel
-    └── 📂 Verification/                   # Screenshot verifikasi (ping, traceroute)
+└── Screenshots/                        # Screenshot verifikasi (opsional)
+    ├── IP_Configuration/               # Screenshot konfigurasi IP
+    ├── DHCP/                           # Screenshot konfigurasi DHCP
+    ├── Routing/                        # Screenshot routing (Static & Dynamic)
+    ├── NAT/                            # Screenshot konfigurasi NAT
+    ├── GRE_Tunnel/                     # Screenshot konfigurasi GRE Tunnel
+    └── Verification/                   # Screenshot verifikasi (ping, traceroute)
 ```
 
 ---
 
-## 📝 Catatan Penting
+## Tim
 
-### ⚠️ Persyaratan Tugas
-
-- ✅ Menggunakan Cisco Packet Tracer untuk semua konfigurasi
-- ✅ Tidak terlalu bergantung pada GenAI / Subnet Calculator
-- ✅ Menggunakan alamat IP private (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16)
-- ✅ Cadangan subnet ~20% untuk skalabilitas
-- ✅ Semua subnet dapat saling berkomunikasi
-- ✅ Tidak hanya mengandalkan default route global
-
-### 📋 Checklist Pengumpulan
-
-- [ ] File Packet Tracer (.pkt) lengkap dan berfungsi
-- [ ] Diagram topologi (.png) jelas dan rapi
-- [ ] Tabel subnet Excel (.xlsx) lengkap dan akurat
-- [ ] Dokumentasi konfigurasi (.pdf atau .md) dengan screenshot
-- [ ] Verifikasi konektivitas (ping/traceroute) berhasil
-- [ ] Semua file dikompres dalam .ZIP
-- [ ] Format nama file sesuai: `FP_Jarkom_kelompok_XXX_YYY_ZZZ.ZIP`
-
----
-
-## 👥 Tim
-
-| Nama | NRP | Kontribusi |
-|------|-----|------------|
-| [Nama Anggota 1] | [NRP 1] | [Deskripsi kontribusi] |
-| [Nama Anggota 2] | [NRP 2] | [Deskripsi kontribusi] |
-| [Nama Anggota 3] | [NRP 3] | [Deskripsi kontribusi] |
-
----
-
-## 📚 Referensi
-
-- [Cisco Packet Tracer Documentation](https://www.netacad.com/courses/packet-tracer)
-- [VLSM Subnetting Guide](https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html)
-- [CIDR and Route Aggregation](https://www.cisco.com/c/en/us/support/docs/ip/enhanced-interior-gateway-routing-protocol-eigrp/8606-subnet.html)
-- [OSPF Configuration Guide](https://www.cisco.com/c/en/us/td/docs/ios/iproute_ospf/configuration/12-4t/iro-12-4t-book.html)
-- [NAT Overload (PAT) Configuration](https://www.cisco.com/c/en/us/support/docs/ip/network-address-translation-nat/13772-12.html)
-- [GRE Tunnel Configuration](https://www.cisco.com/c/en/us/support/docs/security-vpn/ipsec-negotiation-ike-protocols/14106-dynamic-gre.html)
-
----
-
-## 🎓 Informasi Akademik
-
-| Detail | Keterangan |
-|--------|------------|
-| **Mata Kuliah** | Komunikasi Data dan Jaringan Komputer |
-| **Semester** | Gasal 2025/2026 |
-| **Dosen** | [Nama Dosen] |
-| **Institusi** | [Nama Universitas] |
-| **Deadline** | Minggu, 14 Desember 2025, 23.59 |
-
----
-
-<div align="center">
-
-### 📞 Kontak
-
-Jika ada pertanyaan atau butuh bantuan, silakan hubungi:
-
-**Email**: [email@example.com]  
-**GitHub**: [@username](https://github.com/username)
-
----
-
-**⭐ Jika dokumentasi ini membantu, berikan star! ⭐**
-
-Dibuat dengan ❤️ oleh Tim Kelompok Jarkom FP 2025
-
-**Semoga mendapatkan nilai yang memuaskan! 🎉**
-
-</div>
+| Nama | NRP |
+|------|-----|
+| Dina Rahmadani | 5027241065 |
+| Ahmad Ibnu Athaillah | 5027241024 |
