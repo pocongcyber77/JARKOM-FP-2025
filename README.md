@@ -34,8 +34,6 @@
     - [GRE Tunnel](#6-gre-tunnel)
   - [Verifikasi](#verifikasi)
   - [Struktur File](#struktur-file)
-  - [Tim](#tim)
-
   ---
 
   ## Informasi Tugas
