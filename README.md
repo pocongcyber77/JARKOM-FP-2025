@@ -5,11 +5,11 @@
   ![License](https://img.shields.io/badge/license-Academic-green.svg)
 
   ## Dikerjakan Oleh
+| Nama                  | NRP        | Peran & Tanggung Jawab                                   |
+|-----------------------|------------|------------------------------------------------------------|
+| Dina Rahmadani        | 5027241065 | Arsitektur Topologi, CIDR, VLSM, Konfigurasi & Kalkulasi   |
+| Ahmad Ibnu Athaillah  | 5027241024 | Unit Testing, Troubleshooting, Dokumentasi & Manual       |
 
-  | Nama | NRP |
-  |------|-----|
-  | Dina Rahmadani | 5027241065 | Arsitek Topology, CIDR, VLSM, Config & Kalkulasi
-  | Ahmad Ibnu Athaillah | 5027241024 | Unit tesing, Troubleshoot, Dokumentasi & Manual
 
   **Perancangan dan Implementasi Jaringan Komputer untuk Yayasan ARA**
 
